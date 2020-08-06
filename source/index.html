@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -7,11 +8,70 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="page-header"></header>
 
-    <main class="page"></main>
+  <body class="layout">
+    <header class="header">
+      <button class="header__menu-toggle" aria-label="Меню"></button>
+      <a class="header__logo" href="index.html" aria-label="Логотип Maroon"></a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list navigation">
+            <li class="navigation__item"><a href="catalog.html">Каталог</a></li>
+            <li class="navigation__item"><a href="#">О нас</a></li>
+            <li class="navigation__item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="main-nav__contacts social social_for-menu">
+            <li class="social__item"><a class="social-link" href="#" aria-label="Facebook"></a></li>
+            <li class="social__item"><a class="social-link" href="#" aria-label="Instagram"></a></li>
+            <li class="social__item"><a class="social-link" href="#" aria-label="Twitter"></a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="main-nav__list user-actions">
+        <li class="user-actions__item"><a class="user-actions__link user-actions__user" href="#" aria-label="Иконка пользователя"></a></li>
+        <li class="user-actions__item"><a class="user-actions__link user-actions__cart" href="#" aria-label="Иконка корзины"></a></li>
+      </ul>
+    </header>
 
-    <footer class="page-footer"></footer>
+    <main class="main">
+      <section class="main__block about">
+        <div class="about__container">
+          <div class="about__content">
+            <h1 class="about__title">MAROON</h1>
+            <p class="about__description">Натуральная косметика<br>для бережного ухода за кожей</p>
+            <a class="about__button button" href="#">Подробнее</a>
+          </div>
+          <a class="about__item promo-card" href="#">
+            <div class="promo-card__text"><span>Уход для лица</span></div>
+          </a>
+          <a class="about__item promo-card" href="#">
+            <div class="promo-card__text"><span>Уход для тела</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="main__block best-seller"></section>
+
+      <section class="main__block promo"></section>
+
+      <section class="main__block care"></section>
+
+      <section class="main__block history">
+        <div class="history__container">
+          <h2 class="visually-hidden">О Maroon</h2>
+          <p class="history__description">“Мы стремимся сделать уход за кожей
+            доступным и приятным ритуалом для всех,
+            кто хочет заботиться о себе и своем теле”</p>
+          <a class="history__link button" href="#" aria-label="Наша история">Наша история</a>
+        </div>
+      </section>
+
+      <section class="main__block join-us"></section>
+
+      <section class="main__block contacts"></section>
+
+    </main>
+
+    <footer class="footer"></footer>
   </body>
 </html>
