@@ -31,7 +31,7 @@ gulp.task("server", function () {
     server: "source/"
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css")).on("change", server.reload);
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
