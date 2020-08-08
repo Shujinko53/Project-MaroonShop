@@ -36,6 +36,138 @@
 
     <main class="main main_top-spaced catalog-main">
 
+      <section class="catalog">
+        <div class="catalog-head">
+          <div class="catalog-head__top">
+            <div class="catalog-head__wrapper wrapper">
+              <h1 class="catalog-head__title">Каталог</h1>
+              <button class="catalog-head__button-close" type="button" aria-label="Закрыть фильтр"></button>
+              <button class="catalog-head__button-open" type="button"></button>
+            </div>
+          </div>
+          <div class="catalog-head__filter">
+            <div class="wrapper">
+              <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+                <div class="filter__inner">
+                  <div class="filter__block accordion filter__block_face-care">
+                    <div class="filter__block-head">
+                      <div class="filter__subtitle">Уход для лица</div>
+                      <button class="filter__accordion-btn accordion__toggler" type="button" aria-label="Раскрыть фильтр"><span class="accordion__toggler-icon"></span></button>
+                    </div>
+                    <div class="accordion__content">
+                      <ul class="filter__list accordion__inner">
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-face-care-0" name="face-care" value="cream" checked>
+                          <label class="filter__checkbox-label" for="filter-face-care-0">Крема</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-face-care-1" name="face-care" value="serum" checked>
+                          <label for="filter-face-care-1">Сыворотки</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-face-care-2" name="face-care" value="mask" checked>
+                          <label class="filter__checkbox-label" for="filter-face-care-2">Маски</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-face-care-3" name="face-care" value="foam" >
+                          <label class="filter__checkbox-label" for="filter-face-care-3">Пенки</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-face-care-4" name="face-care" value="tonic" >
+                          <label class="filter__checkbox-label" for="filter-face-care-4">Тоники</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-face-care-5" name="face-care" value="powder" checked>
+                          <label class="filter__checkbox-label" for="filter-face-care-5">Пудры</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter__block accordion filter__block_body-care">
+                    <div class="filter__block-head">
+                      <div class="filter__subtitle">Уход для тела</div>
+                      <button class="filter__accordion-btn accordion__toggler" type="button" aria-label="Раскрыть фильтр"><span class="accordion__toggler-icon"></span></button>
+                    </div>
+                    <div class="accordion__content">
+                      <ul class="filter__list accordion__inner">
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-body-care-0" name="body-care" value="cream">
+                          <label class="filter__checkbox-label" for="filter-body-care-0">Крема</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-body-care-1" name="body-care" value="oil" checked>
+                          <label class="filter__checkbox-label" for="filter-body-care-1">Масла</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-body-care-2" name="body-care" value="scrub">
+                          <label class="filter__checkbox-label" for="filter-body-care-2">Скрабы</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-body-care-3" name="body-care" value="soap" checked>
+                          <label class="filter__checkbox-label" for="filter-body-care-3">Мыло</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-body-care-4" name="body-care" value="bomb" checked>
+                          <label class="filter__checkbox-label" for="filter-body-care-4">Бомбочки для ванны</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-body-care-5" name="body-care" value="salt">
+                          <label class="filter__checkbox-label" for="filter-body-care-5">Соль для ванны</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter__block accordion filter__block_skin-type">
+                    <div class="filter__block-head">
+                      <div class="filter__subtitle">Тип кожи</div>
+                      <button class="filter__accordion-btn accordion__toggler" type="button" aria-label="Раскрыть фильтр"><span class="accordion__toggler-icon"></span></button>
+                    </div>
+                    <div class="accordion__content">
+                      <ul class="filter__list accordion__inner">
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-skin-type-0" name="skin-type" value="normal">
+                          <label class="filter__checkbox-label" for="filter-skin-type-0">Нормальная</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-skin-type-1" name="skin-type" value="dry" checked>
+                          <label class="filter__checkbox-label" for="filter-skin-type-1">Сухая</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-skin-type-2" name="skin-type" value="oily">
+                          <label class="filter__checkbox-label" for="filter-skin-type-2">Жирная</label>
+                        </li>
+                        <li class="filter__item">
+                          <input class="visually-hidden" type="checkbox" id="filter-skin-type-3" name="skin-type" value="combined" checked>
+                          <label class="filter__checkbox-label" for="filter-skin-type-3">Комбинированная</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter__buttons">
+                    <button class="filter__button" id="filter__submit" type="submit">Применить</button>
+                    <button class="filter__button" id="filter__reset" type="reset">Сбросить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__block follow">
+        <div class="follow__container">
+          <div class="follow__images-wraper"></div>
+          <div class="follow__content">
+            <h2 class="follow__title">Присоединяйтесь
+              к нам</h2>
+            <p class="follow__text">Подпишитесь на наш аккаунт
+              @marooncare и узнавайте
+              о новиках и акциях первыми</p>
+            <a class="follow__link button" href="#" aria-label="Подписаться">Подписаться</a>
+          </div>
+        </div>
+      </section>
+
       <section class="main__block contacts">
         <div class="contacts__container">
           <div class="contacts__content">
