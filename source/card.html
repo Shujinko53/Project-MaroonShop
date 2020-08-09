@@ -36,6 +36,140 @@
 
     <main class="main main_no-top-spaced">
 
+      <section class="card">
+        <div class="card__wrapper">
+          <div class="card__image-wrapper">
+            Rose - крем для лица
+          </div>
+          <div class="card__content">
+            <h1 class="card__content-title">Rose <small>крем для лица</small></h1>
+            <div class="card__description">
+              <p>Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.</p>
+              <p>Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток.</p>
+            </div>
+            <ul class="card__info ">
+              <li class="card__accordion accordion">
+                <div class="card__accordion-head">
+                  <h2 class="card__accordion-title">Состав</h2>
+                  <button class="card__accordion-toggler accordion__toggler" type="button" aria-label="Открыть"><span class="accordion__toggler-icon"></span></button>
+                </div>
+                <div class="card__accordion-content accordion__content">
+                  <p class="card__accordion-content accordion-inner">
+                    Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene
+                    Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower
+                    Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
+                  </p>
+                </div>
+              </li>
+              <li class="card__accordion accordion">
+                <div class="card__accordion-head">
+                  <h2 class="card__accordion-title">Способ применения</h2>
+                  <button class="card__accordion-toggler accordion__toggler" type="button" aria-label="Открыть"><span class="accordion__toggler-icon"></span></button>
+                </div>
+                <div class="card__accordion-content accordion__content">
+                  <div class="card__accordion-content accordion-inner">
+                    Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз.
+                    Подходит для дневного и ночного ухода.
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <form class="card__options" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="card__option">
+                <p class="card__option-title">Объем:</p>
+                <ul class="card__option-list">
+                  <li class="card__option-item">
+                    <input class="card__input-radio visually-hidden" type="radio" id="50ml" name="volume" value="50ml">
+                    <label for="50ml"></label>
+                  </li>
+                  <li class="card__option-item">
+                    <input class="card__input-radio visually-hidden" type="radio" id="30ml" name="volume" value="30ml">
+                    <label for="30ml"></label>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__price">
+                <span>890 ₽</span>
+                <button class="card__button" id="card-submit" type="submit">Добавить в корзину</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog__history">
+        <div class="catalog-history wrapper">
+          <h2 class="catalog-history__title">Вы недавно смотрели</h2>
+          <ul class="catalog-history__list">
+            <li class="catalog-history__item product">
+              <a class="product__link" href="#">
+                Clean - маска для лица
+                <div class="product__wrapper">
+                  <div class="product__text">
+                    <h3 class="product__title">Clean</h3><span class="product__price">490 ₽</span>
+                  </div>
+                  <div class="product__text">
+                    <div class="product__description">маска для лица</div>
+                    <div class="product__description">100g</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog-history__item product">
+              <a class="product__link" href="#">
+                Lotos - маска для лица
+                <div class="product__wrapper">
+                  <div class="product__text">
+                    <h3 class="product__title">Lotos</h3><span class="product__price">890 ₽</span>
+                  </div>
+                  <div class="product__text">
+                    <div class="product__description">маска для лица</div>
+                    <div class="product__description">50ml</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog-history__item product">
+              <a class="product__link" href="#">
+                Lavender - мыло ручной работы
+                <div class="product__wrapper">
+                  <div class="product__text">
+                    <h3 class="product__title">Lavender</h3><span class="product__price">290 ₽</span>
+                  </div>
+                  <div class="product__text">
+                    <div class="product__description">мыло ручной работы</div>
+                    <div class="product__description">50g</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog-history__item product">
+              <a class="product__link" href="#">
+                Coconut - масло для тела
+                <div class="product__wrapper">
+                  <div class="product__text">
+                    <h3 class="product__title">Coconut</h3><span class="product__price">990 ₽</span>
+                  </div>
+                  <div class="product__text">
+                    <div class="product__description">масло для тела</div>
+                    <div class="product__description">300ml</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="pagination">
+            <div class="pagination__numbers">
+              <span class="pagination__number"><a class="pagination__number-link pagination__number-link_current" href="#" aria-label="Первая страница">1</a></span>
+              <span class="pagination__number"><a class="pagination__number-link" href="#" aria-label="Восьмая страница (последняя)">3</a></span>
+            </div>
+            <div class="pagination__arrows">
+              <a class="pagination__arrow" href="#" aria-label="Предыдущая страница"></a>
+              <a class="pagination__arrow" href="#" aria-label="Следующая страница"></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
 
