@@ -36,12 +36,16 @@ picture {
   overflow: hidden;
 }
 .filter__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .header {
   background-color: #ffffff;
 }
 .navigation__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .user-actions {
@@ -72,6 +76,8 @@ picture {
 }
 .catalog__list,
 .catalog-history__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .footer {
