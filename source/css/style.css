@@ -54,6 +54,11 @@ picture {
 .follow__image-wrapper {
   background: #f1efeb;
 }
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .care__content {
   background: #f4f1ed;
 }
@@ -84,6 +89,8 @@ picture {
   background: #f4f1ed;
 }
 .footer__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
