@@ -1,7 +1,21 @@
-.social {
-  list-style: none;
+.social,
+.social__list {
+  .list-styles (0, 0, none);
 }
 
-.social__list {
-  list-style: none;
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.social__item_minor-spaced:not(:first-child) {
+  margin-left: 25px;
+}
+
+.social__link {
+  display: flex;
 }
