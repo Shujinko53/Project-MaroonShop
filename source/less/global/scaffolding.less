@@ -1,5 +1,6 @@
-::before,
-::after {
+*,
+::after,
+::before {
   box-sizing: inherit;
 }
 
@@ -25,6 +26,10 @@ picture {
   display: flex;
 }
 
+.main {
+  flex-grow: 1;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -48,8 +53,4 @@ picture {
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1200px;
-}
-
-.logo {
-  display: flex;
 }
