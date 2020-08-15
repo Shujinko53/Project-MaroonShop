@@ -1,3 +1,52 @@
+.filter {
+  padding-top: 18px;
+}
+
+.filter__inner {
+  .list-styles (0, 0, none);
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, minmax(70px, max-content));
+  grid-column-gap: 82px;
+  justify-content: center;
+  grid-template-areas: "face body skin""face body buttons";
+
+  margin-left: 10px;
+}
+
 .filter__list {
   .list-styles (0, 0, none);
+}
+
+.filter__block {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.filter__block_face-care {
+  grid-area: face;
+}
+
+.filter__block_body-care {
+  grid-area: body;
+}
+
+.filter__block_skin-type {
+  grid-area: skin;
+}
+
+.filter__block-head {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.filter__item {
+  margin-bottom: 12px;
+}
+
+.filter__buttons {
+  grid-area: buttons;
 }
