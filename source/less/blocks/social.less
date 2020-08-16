@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.social_for-menu {
+  display: none;
+}
+
 .social__item:not(:first-child) {
   margin-left: 30px;
 }
@@ -18,6 +22,18 @@
 
 .social__link {
   display: flex;
+
+  outline: 0;
+
+  transition: 0.2s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+
+    transition: 0.2s;
+  }
 }
 
 .social__list {
