@@ -289,19 +289,41 @@ picture {
   text-align: center;
   text-transform: uppercase;
 }
+.about__description {
+  margin: 0;
+  font: normal 18px/1.45 "Mplus", "Arial", sans-serif;
+  text-align: center;
+}
 .about__button {
   margin: 33px auto 0;
 }
+.promo-card {
+  outline: 0;
+}
+.promo-card:active > .promo-card__text,
+.promo-card:focus > .promo-card__text,
+.promo-card:hover > .promo-card__text {
+  opacity: 0.5;
+  transition: 0.2s;
+}
 .promo-card__image {
   display: block;
-  height: 422px;
   width: 330px;
+  height: 422px;
+  background: #ede7e1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .promo-card__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0 0;
+  font: 500 16px/1.4 "Mplus", "Arial", sans-serif;
+  color: #122947;
+  transition: 0.2s;
 }
 .promo-card__icon {
   height: 12px;
@@ -322,9 +344,24 @@ picture {
   height: 250px;
   margin: 0 85px 44px 0;
 }
+.best-sellers__title {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+}
 .best-sellers__description {
-  margin: 0;
   width: 215px;
+  margin: 0;
+  font: normal 18px/1.45 "Mplus", "Arial", sans-serif;
+}
+.best-sellers__link {
+  margin-top: 31px;
+  padding: 12px 23px;
+}
+.best-sellers__link_mobile {
+  display: none;
 }
 .product-card {
   position: relative;

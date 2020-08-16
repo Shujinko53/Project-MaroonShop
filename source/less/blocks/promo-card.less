@@ -1,7 +1,24 @@
+.promo-card {
+  outline: 0;
+
+  &:active > .promo-card__text,
+  &:focus > .promo-card__text,
+  &:hover > .promo-card__text {
+    opacity: 0.5;
+
+    transition: 0.2s;
+  }
+}
+
 .promo-card__image {
   display: block;
-  height: 422px;
   width: 330px;
+  height: 422px;
+
+  background: #ede7e1;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 .promo-card__text {
@@ -9,6 +26,11 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px 0 0;
+
+  font: 500 16px/1.4 "Mplus", "Arial", sans-serif;
+  color: #122947;
+
+  transition: 0.2s;
 }
 
 .promo-card__icon {
