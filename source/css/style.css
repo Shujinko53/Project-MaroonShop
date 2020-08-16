@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Mplus";
+  src: local("Mplus 1p"), local("Mplus1p-Regular"), url("../fonts/m-plus-1p.woff2") format("woff2"), url("../fonts/m-plus-1p.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mplus";
+  src: local("Mplus 1p Medium"), local("Mplus1p-Medium"), url("../fonts/m-plus-1p-500.woff2") format("woff2"), url("../fonts/m-plus-1p-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway.woff2") format("woff2"), url("../fonts/raleway.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-500.woff2") format("woff2"), url("../fonts/raleway-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 ::after,
 ::before {
@@ -42,6 +70,31 @@ picture {
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1200px;
+}
+.button {
+  font: 500 16px/1 "Mplus", "Arial", sans-serif;
+  display: block;
+  padding: 12px 27px;
+  color: #122947;
+  border: 1px solid #b3bac1;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+}
+.button.button:active,
+.button.button:focus,
+.button.button:hover {
+  background: #ffffff;
+  transition: 0.2s;
+  opacity: 0.5;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
 }
 .filter {
   padding-top: 18px;
@@ -89,13 +142,48 @@ picture {
   grid-area: buttons;
 }
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 55;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   min-width: 320px;
+  margin: 0 auto;
+  padding: 40px 98px;
   background-color: #ffffff;
+  border-bottom: 1px solid #dbdce0;
+  transition: 0.3s;
+}
+.header_transparent {
+  background: 0 0;
+  border-color: transparent;
+}
+.header_colored {
+  background: #ffffff;
+  border-color: #dbdce0;
+}
+.header__menu-toggle {
+  background: url("../img/burger-icon.svg") no-repeat left center / 24px 12px transparent;
+  display: none;
+  padding: 0;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+  outline: 0;
+}
+.header__menu-toggle:active,
+.header__menu-toggle:focus,
+.header__menu-toggle:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.header__menu-toggle_active {
+  background: url("../../img/cross-icon.svg") no-repeat 0 0px 18px;
 }
 .header__navigation {
   flex-grow: 1;

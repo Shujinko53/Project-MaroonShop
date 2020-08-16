@@ -1,12 +1,60 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 55;
+
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   min-width: 320px;
+  margin: 0 auto;
+  padding: 40px 98px;
 
   background-color: #ffffff;
+  border-bottom: 1px solid #dbdce0;
+
+  transition: 0.3s;
+}
+
+.header_transparent {
+  background: 0 0;
+  border-color: transparent;
+}
+
+.header_colored {
+  background: #ffffff;
+  border-color: #dbdce0;
+}
+
+.header__menu-toggle {
+  background: url("../img/burger-icon.svg")
+    no-repeat left center/24px 12px transparent;
+
+  display: none;
+  padding: 0;
+
+  border: none;
+
+  transition: 0.2s;
+
+  cursor: pointer;
+  outline: 0;
+
+  &:active,
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+
+    transition: 0.2s;
+  }
+}
+
+.header__menu-toggle_active {
+  background: url("../../img/cross-icon.svg") no-repeat 0 0/18px 18px;
 }
 
 .header__navigation {
