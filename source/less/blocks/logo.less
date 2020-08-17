@@ -1,5 +1,17 @@
 .logo {
   display: flex;
+
+  outline: 0;
+
+  transition: 0.2s;
+
+  &:active,
+  &:focus,
+  &:hover {
+  opacity: 0.5;
+
+  transition: 0.2s;
+  }
 }
 
 .logo__image {

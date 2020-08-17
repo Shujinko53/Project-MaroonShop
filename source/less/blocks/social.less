@@ -52,4 +52,16 @@
   &:nth-child(3) {
     margin-right: 0;
   }
+
+  & a:focus,
+  & a:hover {
+    outline: none;
+    opacity: 0.5;
+
+    transition: 0.2s;
+  }
+
+  & a:active {
+    opacity: 1;
+  }
 }

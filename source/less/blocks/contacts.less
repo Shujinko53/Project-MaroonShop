@@ -16,9 +16,69 @@
   padding: 92px 185px 100px 100px;
 
   background: #f4f1ed;
-  box-sizing: border-box;
+}
+
+.contacts__title {
+  margin: 0 0 25px;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
 }
 
 .contact__list {
   .list-styles (0, 0, none);
+
+  margin-bottom: 5px;
+}
+
+.contact__item {
+  margin-bottom: 22px;
+}
+
+.contact__item h3 {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font: normal 500 18px/145% "Mplus", "Arial", sans-serif;
+  color: #122947;
+}
+
+.contact__item p {
+  margin: 0;
+
+  font: normal normal 18px/145% "Mplus", "Arial", sans-serif;
+  color: #122947;
+}
+
+.contacts__link {
+  font: normal 18px/1.45 "Mplus", "Arial", sans-serif;
+  white-space: nowrap;
+  color: #122947;
+
+  cursor: pointer;
+  outline: 0;
+
+  transition: 0.2s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+}
+
+.contacts__social {
+  margin: 0;
+}
+
+.contacts__map-wrapper {
+  width: 100%;
+}
+
+.map {
+  height: 422px;
+
+  background: url("../img/map@1x.jpg") no-repeat 0 0/cover #ffffff;
 }
