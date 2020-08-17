@@ -424,19 +424,13 @@ picture {
   height: 1px;
   background: #122947;
 }
-.slider__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
 .slider {
   width: 100%;
   margin: 0;
 }
 .slider__item {
-  height: 312px;
   width: 230px;
+  height: 312px;
 }
 .slider__button-container {
   display: flex;

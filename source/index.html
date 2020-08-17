@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Online-Store Maroon</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -156,37 +157,35 @@
       <section class="main__block best-sellers">
         <div class="best-sellers__text">
           <h2 class="best-sellers__title">Бестселлеры</h2>
-          <p class="best-sellers__description">Легендарные продукты,
-            завоевавшие любовь наших клиентов</p>
+          <p class="best-sellers__description">Легендарные продукты, завоевавшие любовь наших клиентов</p>
           <a class="best-sellers__link button" href="#" aria-label="Смотреть все">Смотреть все</a>
         </div>
         <div class="best-sellers__slider slider swiper-container">
-          <ul class="slider__list swiper-list">
-            <li class=" slider__item swiper-slide product-card">
-              <img class="product-card__image" src="img/cream-high@1x.jpg" width="230" height="312" alt="High - крем для лица">
+          <div class="swiper-wrapper slider__wrapper">
+            <div class="swiper-slide slider__item product-card">
+              <img class="product-card__image" src="img/cream-high@1x.jpg" alt="High - крем для лица" height="312" width="230">
               <h3 class="product-card__title">High</h3>
-              <p class="product-card__description">крем для лица</p>
-              <a class="product-card__link" href="#" aria-label="Подробнее">Подробнее</a>
-            </li>
-            <li class=" slider__item swiper-slide product-card">
-              <img class="product-card__image" src="img/cream-rest@1x.jpg" width="230" height="312" alt="Rest - минеральная пудра">
+              <p class="product-card__description">крем для лица</p><a class="product-card__link" href="#" aria-label="Подробнее">Подробнее</a>
+            </div>
+            <div class="swiper-slide slider__item product-card">
+              <img class="product-card__image" src="img/cream-rest@1x.jpg" alt="Rest - минеральная пудра" height="312" width="230">
               <h3 class="product-card__title">Rest</h3>
-              <p class="product-card__description">минеральная пудра</p>
-              <a class="product-card__link" href="#" aria-label="Подробнее">Подробнее</a>
-            </li>
-            <li class=" slider__item swiper-slide product-card">
-              <img class="product-card__image" src="img/cream-rose@1x.jpg" width="230" height="312" alt="Rose - крем для лица">
+              <p class="product-card__description">минеральная пудра</p><a class="product-card__link" href="#"
+                aria-label="Подробнее">Подробнее</a>
+            </div>
+            <div class="swiper-slide slider__item product-card">
+              <img class="product-card__image" src="img/cream-rose@1x.jpg" alt="Rose - крем для лица" height="312" width="230">
               <h3 class="product-card__title">Rose</h3>
-              <p class="product-card__description">крем для лица</p>
-              <a class="product-card__link" href="card.html" aria-label="Подробнее">Подробнее</a>
-            </li>
-            <li class=" slider__item swiper-slide product-card">
-              <img class="product-card__image" src="img/cream-milk@1x.jpg" width="230" height="312" alt="Milk - масло для тела">
+              <p class="product-card__description">крем для лица</p><a class="product-card__link" href="card.html"
+                aria-label="Подробнее">Подробнее</a>
+            </div>
+            <div class="swiper-slide slider__item product-card">
+              <img class="product-card__image" src="img/cream-milk@1x.jpg" alt="Milk - масло для тела" height="312" width="230">
               <h3 class="product-card__title">Milk</h3>
-              <p class="product-card__description">масло для тела</p>
-              <a class="product-card__link" href="#" aria-label="Подробнее">Подробнее</a>
-            </li>
-          </ul>
+              <p class="product-card__description">масло для тела</p><a class="product-card__link" href="#"
+                aria-label="Подробнее">Подробнее</a>
+            </div>
+          </div>
           <div class="slider__button-container">
             <div class="slider__button slider__button_prev">
               <svg class="slider-icon" height="12" width="26">
@@ -199,8 +198,7 @@
               </svg>
             </div>
           </div>
-        </div>
-        <a class="best-sellers__link best-sellers__link_mobile button" href="#" aria-label="Смотреть все">Смотреть все</a>
+        </div><a class="best-sellers__link best-sellers__link_mobile button" href="#" aria-label="Смотреть все">Смотреть все</a>
       </section>
 
       <section class="main__block promo">
