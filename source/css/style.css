@@ -790,26 +790,13 @@ picture {
 .social-item a:active {
   opacity: 1;
 }
-.catalog {
-  padding-bottom: 60px;
-}
-.catalog-head__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .catalog-main {
   background: #f8f8f6;
 }
-.catalog-history {
-  padding: 55px 15px 123px;
+.catalog {
+  padding-bottom: 60px;
 }
-.catalog-history__wrapper {
-  margin: 0 auto;
-  max-width: 1170px;
-}
-.catalog__list,
-.catalog-history__list {
+.catalog__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -820,22 +807,167 @@ picture {
   justify-content: flex-start;
   padding-top: 26px;
 }
+.catalog__item {
+  position: relative;
+  width: 270px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.catalog__item:nth-child(4n) {
+  margin-right: 0;
+}
+.catalog-head__top {
+  position: relative;
+  z-index: 20;
+  padding: 38px 0 15px;
+  background: #f8f8f6;
+}
+.catalog-head__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog-head__title {
+  margin: 0;
+  font: normal 500 36px/145% "Raleway", "Arial", sans-serif;
+  color: #122947;
+}
+.catalog-head__button-close {
+  position: relative;
+  display: none;
+  width: 18px;
+  height: 18px;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.catalog-head__button-close::before,
+.catalog-head__button-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  background: #122947;
+}
+.catalog-head__button-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.catalog-head__button-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.catalog-head__button-close:focus,
+.catalog-head__button-close:hover {
+  opacity: 0.7;
+}
+.catalog-head__button-close:active {
+  opacity: 1;
+}
+.catalog-head_filter-inited .catalog-head__button-close {
+  display: block;
+}
+.catalog-head_filter-hidden .catalog-head__button-close {
+  display: none;
+}
+.catalog-head__button-open {
+  display: none;
+  min-width: 141px;
+  margin: 0;
+  padding: 7px 25px 10px;
+  font: normal 500 16px/140% "Mplus", "Arial", sans-serif;
+  vertical-align: top;
+  text-decoration: none;
+  color: #122947;
+  background: 0 0;
+  box-sizing: border-box;
+  border: 1px solid #b3bac1;
+  border-radius: 2px;
+  outline: 0;
+  cursor: pointer;
+}
+.catalog-head__button-open:focus,
+.catalog-head__button-open:hover {
+  border: 1px solid #122947;
+}
+.catalog-head__button-open:active {
+  border: 1px solid #b3bac1;
+}
+.catalog-head__button-open:not(:last-child) {
+  margin-right: 20px;
+}
+.catalog-head_filter-inited .catalog-head__button-open {
+  display: none;
+}
+.catalog-head_filter-hidden .catalog-head__button-open {
+  display: inline-block;
+}
+.catalog-history {
+  padding: 55px 15px 123px;
+}
+.catalog-history__wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+}
 .catalog-history__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-top: 26px;
 }
-.catalog__item,
 .catalog-history__item {
   position: relative;
   width: 270px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.catalog__item:nth-child(4n),
 .catalog-history__item:nth-child(4n) {
   margin-right: 0;
+}
+.product__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  background: #d1c7bd;
+  outline: 0;
+  transition: 0.2s;
+}
+.product__link:focus,
+.product__link:hover {
+  opacity: 0.5;
+}
+.product__link:active {
+  opacity: 1;
+}
+.product__image {
+  width: 100%;
+  height: 100%;
+}
+.product__title {
+  margin: 0;
+  font: normal 500 16px/145% "Raleway", "Arial", sans-serif;
+  color: #122947;
+}
+.product__price {
+  margin: 0;
+  font: normal 500 13px/145% "Mplus", "Arial", sans-serif;
+  color: #122947;
+}
+.product__text {
+  display: flex;
+  justify-content: space-between;
+}
+.product__description {
+  margin: 0;
+  font: normal normal 13px/145% "Mplus", "Arial", sans-serif;
+  color: #9A9DA0;
 }
 .product__wrapper {
   position: absolute;
@@ -846,17 +978,6 @@ picture {
   width: 100%;
   padding: 20px 20px 17px 20px;
   box-sizing: border-box;
-}
-.product__image {
-  width: 100%;
-  height: 100%;
-}
-.product__text {
-  display: flex;
-  justify-content: space-between;
-}
-.product__title {
-  margin: 0;
 }
 .pagination {
   display: flex;
