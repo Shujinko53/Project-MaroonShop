@@ -7,7 +7,7 @@
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, minmax(70px, max-content));
+  grid-template-columns: repeat(3, minmax(50px, max-content));
   grid-column-gap: 82px;
   justify-content: center;
   grid-template-areas: "face body skin""face body buttons";
@@ -15,11 +15,9 @@
   margin-left: 10px;
 }
 
-.filter__list {
-  .list-styles (0, 0, none);
-}
-
 .filter__block {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -38,15 +36,100 @@
   grid-area: skin;
 }
 
-.filter__block-head {
-  position: relative;
-  margin-bottom: 18px;
+.filter__list {
+  .list-styles (0, 0, none);
+
+  padding-top: 2px;
 }
 
 .filter__item {
   margin-bottom: 12px;
 }
 
+.filter__checkbox-label {
+  position: relative;
+
+  padding-left: 22px;
+
+  font: normal normal 16px/140% "Mplus", "Arial", sans-serif;
+  color: #9a9da0;
+
+  cursor: pointer;
+}
+
+.filter__checkbox-label::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 14px;
+  height: 14px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+:checked + .filter__checkbox-label {
+  color: #122947;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 2px;
+    top: 6px;
+
+    width: 10px;
+    height: 10px;
+
+    background: #122947;
+    border: 1px solid #122947;
+    border-radius: 50%;
+  }
+}
+
 .filter__buttons {
   grid-area: buttons;
+}
+
+.filter__button {
+  display: inline-block;
+  min-width: 141px;
+  margin: 0;
+  padding: 7px 25px 10px;
+
+  font: normal 500 16px/140% "Mplus", "Arial", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  color: #122947;
+  border: 1px solid #b3bac1;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+  background: 0 0;
+
+  cursor: pointer;
+  outline: 0;
+
+  &:focus,
+  &:hover {
+    border: 1px solid #122947;
+  }
+
+  &:active {
+    border: 1px solid #b3bac1;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.filter__block-head {
+  position: relative;
+
+  margin-bottom: 18px;
 }
