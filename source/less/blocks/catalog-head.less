@@ -113,3 +113,30 @@
 .catalog-head_filter-hidden .catalog-head__button-open {
   display: inline-block;
 }
+
+.catalog-head__filter {
+  padding-bottom: 120px;
+
+  background: #f8f8f6;
+  box-sizing: border-box;
+
+  box-shadow: 0 4px 30px rgba(214, 214, 214, 0.19);
+}
+
+.catalog-head_filter-inited .catalog-head__filter {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  opacity: 1;
+  pointer-events: auto;
+
+  transition: 0.15s opacity;
+}
+
+.catalog-head_filter-hidden .catalog-head__filter {
+  opacity: 0;
+  pointer-events: none;
+}

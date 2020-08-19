@@ -904,12 +904,39 @@ picture {
 .catalog-head_filter-hidden .catalog-head__button-open {
   display: inline-block;
 }
+.catalog-head__filter {
+  padding-bottom: 120px;
+  background: #f8f8f6;
+  box-sizing: border-box;
+  box-shadow: 0 4px 30px rgba(214, 214, 214, 0.19);
+}
+.catalog-head_filter-inited .catalog-head__filter {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.15s opacity;
+}
+.catalog-head_filter-hidden .catalog-head__filter {
+  opacity: 0;
+  pointer-events: none;
+}
 .catalog-history {
   padding: 55px 15px 123px;
 }
 .catalog-history__wrapper {
   margin: 0 auto;
   max-width: 1170px;
+}
+.catalog-history h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font: normal 500 32px/125% "Raleway", "Arial", sans-serif;
+  color: #122947;
 }
 .catalog-history__list {
   margin: 0;
@@ -985,19 +1012,59 @@ picture {
   align-items: center;
   padding: 12px 0;
 }
+.pagination__number-link {
+  font: normal 500 18px/145% "Mplus", "Arial", sans-serif;
+  color: #9a9da0;
+  outline: 0;
+}
+.pagination__number-link_current {
+  color: #122947;
+}
 .pagination__numbers {
   width: 100%;
   padding-left: 85px;
+  text-align: center;
 }
 .pagination__number {
+  position: relative;
   margin-right: 70px;
+}
+.pagination__number:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: -60px;
+  width: 50px;
+  height: 1px;
+  background-color: #122947;
+}
+.pagination__number:last-child {
+  margin-right: 0;
 }
 .pagination__arrows {
   display: flex;
   justify-content: space-between;
 }
+.pagination__arrow {
+  display: flex;
+  width: 26px;
+  height: 12px;
+  background: 0 0;
+  outline: 0;
+  cursor: pointer;
+}
 .pagination__arrow:first-child {
   margin-right: 32px;
+}
+.pagination a {
+  transition: 0.2s;
+}
+.pagination a:focus,
+.pagination a:hover {
+  opacity: 0.5;
+}
+.pagination a:active {
+  opacity: 1;
 }
 .card {
   padding: 40px 15px 77px;
@@ -1010,6 +1077,9 @@ picture {
 }
 .card__image-wrapper {
   margin-right: 70px;
+}
+.card__image {
+  background: #d1c7bd;
 }
 .card__content {
   padding-top: 41px;
@@ -1073,16 +1143,27 @@ picture {
 .card__accordion-head:hover {
   cursor: pointer;
 }
+.card__accordion-toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s opacity;
+}
+.card__accordion-toggler:hover {
+  opacity: 0.5;
+}
+.card__accordion-toggler:active {
+  opacity: 1;
+}
 .card__accordion-title {
   margin: 0;
   font: normal 500 18px/145% "Mplus", "Arial", sans-serif;
   color: #122947;
-}
-.accordion__content {
-  box-sizing: border-box;
-  overflow: hidden;
-  transition-property: height;
-  transition-duration: 0.15s;
 }
 .card__accordion-text {
   width: 100%;
@@ -1156,8 +1237,83 @@ picture {
   justify-content: flex-start;
   align-items: center;
 }
-.logo {
+.card__price span {
+  margin: 0;
+  margin-right: 50px;
+  font: normal 500 26px/145% "Mplus", "Arial", sans-serif;
+  color: #122947;
+}
+.card__button {
+  display: inline-block;
+  margin: 0;
+  padding: 7px 26px 10px;
+  vertical-align: top;
+  text-decoration: none;
+  text-align: center;
+  font: normal 500 16px/140% "Mplus", "Arial", sans-serif;
+  color: #122947;
+  background: 0 0;
+  border: 1px solid #b3bac1;
+  border-radius: 2px;
+  outline: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.card__button:focus,
+.card__button:hover {
+  border: 1px solid #122947;
+}
+.card__button:active {
+  border: 1px solid #b3bac1;
+}
+.card-off {
+  display: none;
+}
+.accordion__toggler {
+  display: none;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+}
+.accordion_inited .accordion__toggler {
   display: flex;
+}
+.accordion__toggler-icon {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.accordion__toggler-icon::after,
+.accordion__toggler-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  display: block;
+  width: 12px;
+  height: 2px;
+  margin-top: -1px;
+  margin-left: -6px;
+  background: #122947;
+}
+.accordion__toggler-icon::after {
+  transform: rotate(90deg) scaleY(0);
+  transition: 0.15s transform;
+}
+.accordion__content {
+  box-sizing: border-box;
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: 0.15s;
+}
+.logo {
   outline: 0;
   transition: 0.2s;
 }
