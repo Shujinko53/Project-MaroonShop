@@ -26,6 +26,22 @@
   font-style: normal;
   font-display: swap;
 }
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 *,
 ::after,
 ::before {
@@ -80,6 +96,9 @@ picture {
   border-radius: 2px;
   cursor: pointer;
   outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   transition: 0.2s;
 }
 .button.button:active,
@@ -201,6 +220,13 @@ picture {
   position: relative;
   margin-bottom: 18px;
 }
+.filter__subtitle {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  font: normal 500 18px/140% "Mplus", "Arial", sans-serif;
+  color: #122947;
+}
 .header {
   position: fixed;
   top: 0;
@@ -252,6 +278,15 @@ picture {
   margin: 0 0 0 51px;
   padding: 0;
 }
+.navigation__overlay {
+  display: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: 0 0;
+  cursor: pointer;
+}
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -262,6 +297,9 @@ picture {
   background: 0 0;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .navigation__list {
   margin: 0;
@@ -1307,13 +1345,30 @@ picture {
   transform: rotate(90deg) scaleY(0);
   transition: 0.15s transform;
 }
+.accordion_closed .accordion__toggler-icon::after {
+  transform: rotate(90deg) scaleY(1);
+}
 .accordion__content {
   box-sizing: border-box;
   overflow: hidden;
   transition-property: height;
   transition-duration: 0.15s;
 }
+.accordion_closed .accordion__content {
+  height: 0 !important;
+}
+.accordion__inner {
+  transition: 0.15s opacity;
+}
+.accordion_closed .accordion__inner {
+  opacity: 0;
+}
+.accordion_opened .accordion__inner {
+  opacity: 1;
+  transition-delay: 0.75s;
+}
 .logo {
+  display: flex;
   outline: 0;
   transition: 0.2s;
 }
