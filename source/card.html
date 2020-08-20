@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Online-Store Maroon</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -71,9 +72,9 @@
         </symbol>
       </svg>
     </div>
-    <header class="header header_transparent">
+    <header class="header">
       <button class="header__menu-toggle" aria-label="Меню"></button>
-      <a class="header__logo" href="index.html" aria-label="Логотип Maroon">
+      <a class="logo" href="index.html" aria-label="Логотип Maroon">
         <svg class="logo__image" width="131" height="21">
           <use xlink:href="#logo-icon"></use>
         </svg>
@@ -108,7 +109,7 @@
           </ul>
         </div>
       </nav>
-      <ul class="main-nav__list user-actions">
+      <ul class="header__actions user-actions">
         <li class="user-actions__item">
           <a class="user-actions__link user-actions__user" href="#" aria-label="Иконка пользователя">
             <svg width="16" height="21">
@@ -124,7 +125,7 @@
       </ul>
     </header>
 
-    <main class="main main_no-top-spaced">
+    <main class="main main_top-spaced">
 
       <section class="card">
         <div class="card__wrapper">
@@ -141,11 +142,12 @@
               <li class="card__accordion accordion">
                 <div class="card__accordion-head">
                   <h2 class="card__accordion-title">Состав</h2>
-                  <button class="card__accordion-toggler accordion__toggler" type="button" aria-label="Открыть"><span class="accordion__toggler-icon"></span></button>
+                  <button class="card__accordion-toggler accordion__toggler" type="button" aria-label="Открыть">
+                    <span class="accordion__toggler-icon"></span>
+                  </button>
                 </div>
                 <div class="card__accordion-content accordion__content">
-                  <p class="card__accordion-content accordion-inner">
-                    Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene
+                  <p class="card__accordion-text accordion-inner">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene
                     Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower
                     Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
                   </p>
@@ -157,7 +159,7 @@
                   <button class="card__accordion-toggler accordion__toggler" type="button" aria-label="Открыть"><span class="accordion__toggler-icon"></span></button>
                 </div>
                 <div class="card__accordion-content accordion__content">
-                  <div class="card__accordion-content accordion-inner">
+                  <div class="card__accordion-text accordion-inner">
                     Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз.
                     Подходит для дневного и ночного ухода.
                   </div>
@@ -169,12 +171,13 @@
                 <p class="card__option-title">Объем:</p>
                 <ul class="card__option-list">
                   <li class="card__option-item">
-                    <input class="card__input-radio visually-hidden" type="radio" id="50ml" name="volume" value="50ml">
-                    <label for="50ml">50ml</label>
+                    <input class="card__input-radio visually-hidden" id="50ml" type="radio" name="volume" value="50ml"
+                      checked>
+                    <label class="card__radio" for="50ml">50ml</label>
                   </li>
                   <li class="card__option-item">
-                    <input class="card__input-radio visually-hidden" type="radio" id="30ml" name="volume" value="30ml">
-                    <label for="30ml">30ml</label>
+                    <input class="card__input-radio visually-hidden" id="30ml" type="radio" name="volume" value="30ml">
+                    <label class="card__radio" for="30ml">30ml</label>
                   </li>
                 </ul>
               </div>
@@ -280,10 +283,10 @@
             </svg>
           </a>
           <ul class="footer__list">
-            <li class="footer__item"><a href="catalog.html">Каталог</a></li>
-            <li class="footer__item"><a href="#">О нас</a></li>
-            <li class="footer__item"><a href="#">Магазины</a></li>
-            <li class="footer__item"><a href="#">Контакты</a></li>
+            <li class="footer__item"><a class="footer__link" href="catalog.html">Каталог</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Магазины</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
           </ul>
           <ul class="social__list">
             <li class="social-item">
@@ -309,11 +312,11 @@
             </li>
           </ul>
         </div>
-        <div class="footer__copyright">
-          <div class="footer__copyright-inner wrapper">
-            <p>Maroon Ⓒ 2020 Все права защищены</p>
-            <p><a class="footer__copyright-link" href="#" aria-label="Политика конфиденциальности">Политика конфиденциальности</a></p>
-          </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="footer__copyright-inner wrapper">
+          <p>Maroon Ⓒ 2020 Все права защищены</p>
+          <p><a class="footer__copyright-link" href="#" aria-label="Политика конфиденциальности">Политика конфиденциальности</a></p>
         </div>
       </div>
     </footer>

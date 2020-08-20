@@ -4,6 +4,17 @@
   flex-grow: 1;
 }
 
+.navigation__overlay {
+  display: none;
+
+  background: 0 0;
+  border: none;
+
+  cursor: pointer;
+
+  appearance: none;
+}
+
 .navigation__list {
   .list-styles (0, 0, none);
 
@@ -12,4 +23,27 @@
 
 .navigation__item:not(:first-child) {
   margin-left: 35px;
+}
+
+.navigation__link {
+  display: inline-block;
+
+  font: normal 16px/1 "Mplus", "Arial", sans-serif;
+
+  color: #122947;
+  outline: 0;
+
+  transition: 0.2s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+
+    transition: 0.2s;
+  }
+}
+
+.navigation__contacts {
+  margin: 0;
 }

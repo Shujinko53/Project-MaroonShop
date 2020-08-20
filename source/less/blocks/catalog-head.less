@@ -1,0 +1,142 @@
+.catalog-head__top {
+  position: relative;
+  z-index: 20;
+
+  padding: 38px 0 15px;
+
+  background: #f8f8f6;
+}
+
+.catalog-head__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-head__title {
+  margin: 0;
+
+  font: normal 500 36px/145% "Raleway", "Arial", sans-serif;
+  color: #122947;
+}
+
+.catalog-head__button-close {
+  position: relative;
+
+  display: none;
+  width: 18px;
+  height: 18px;
+
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 25px;
+    height: 2px;
+
+    background: #122947;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.catalog-head_filter-inited .catalog-head__button-close {
+  display: block;
+}
+
+.catalog-head_filter-hidden .catalog-head__button-close {
+  display: none;
+}
+
+.catalog-head__button-open {
+  display: none;
+  min-width: 141px;
+  margin: 0;
+  padding: 7px 25px 10px;
+
+  font: normal 500 16px/140% "Mplus", "Arial", sans-serif;
+  vertical-align: top;
+  text-decoration: none;
+  color: #122947;
+
+  background: 0 0;
+  box-sizing: border-box;
+  border: 1px solid #b3bac1;
+  border-radius: 2px;
+  outline: 0;
+
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    border: 1px solid #122947;
+  }
+
+  &:active {
+    border: 1px solid #b3bac1;
+  }
+}
+
+.catalog-head__button-open:not(:last-child) {
+  margin-right: 20px;
+}
+
+.catalog-head_filter-inited .catalog-head__button-open {
+  display: none;
+}
+
+.catalog-head_filter-hidden .catalog-head__button-open {
+  display: inline-block;
+}
+
+.catalog-head__filter {
+  padding-bottom: 120px;
+
+  background: #f8f8f6;
+  box-sizing: border-box;
+
+  box-shadow: 0 4px 30px rgba(214, 214, 214, 0.19);
+}
+
+.catalog-head_filter-inited .catalog-head__filter {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  opacity: 1;
+  pointer-events: auto;
+
+  transition: 0.15s opacity;
+}
+
+.catalog-head_filter-hidden .catalog-head__filter {
+  opacity: 0;
+  pointer-events: none;
+}
