@@ -54,7 +54,7 @@
 }
 
 .header__menu-toggle_active {
-  background: url("../../img/cross-icon.svg") no-repeat 0 0/18px 18px;
+  background: url("../img/cross-icon.svg") no-repeat 0 0/18px 18px;
 }
 
 .header__navigation {
@@ -72,4 +72,39 @@
   appearance: none;
   background: 0 0;
   cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    padding: 40px 45px;
+  }
+
+  .header__menu-toggle {
+    display: block;
+    height: 18px;
+    width: 24px;
+    margin-right: 40px;
+  }
+
+  .header__actions {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 75px;
+    padding: 0 15px;
+  }
+
+  .header__menu-toggle {
+    height: 14px;
+    width: 22px;
+    margin-right: 26px;
+    background-size: 22px 11px;
+  }
+
+  .header__menu-button_active {
+    background-size: 14px 14px;
+  }
 }
