@@ -254,11 +254,95 @@
   display: none;
 }
 
-
 @media (max-width: 1199px) {
+  .card {
+    padding: 40px 45px 18px;
+  }
 
+  .card__wrapper {
+    display: block;
+  }
+
+  .card__image-wrapper {
+    margin-right: 0;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card__content {
+    padding-top: 53px;
+    width: auto;
+  }
+
+  .card__description {
+    width: auto;
+  }
+
+  .card__accordion-button {
+    right: 20px;
+  }
+
+  .card__accordion-button-off {
+    right: 20px;
+  }
+
+  .card__radio::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .card__input-radio:checked + .card__radio::after {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 @media (max-width: 767px) {
+  .card {
+    padding: 40px 15px 35px;
+  }
 
+  .card__content {
+    padding-top: 43px;
+  }
+
+  .card__content-title {
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  .card__info {
+    margin-top: 34px;
+  }
+
+  .card__accordion-title {
+    font-size: 16px;
+  }
+
+  .card__accordion-button-off {
+    right: 10px;
+  }
+
+  .card__option-title {
+    font-size: 16px;
+  }
+
+  .card__radio {
+    font-size: 16px;
+  }
+
+  .card__price span {
+    margin-right: 35px;
+
+    font-size: 22px;
+  }
+
+  .card__button {
+    padding: 9px 27px 12px;
+
+    font-size: 14px;
+  }
 }
