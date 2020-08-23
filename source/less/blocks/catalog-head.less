@@ -140,3 +140,33 @@
   opacity: 0;
   pointer-events: none;
 }
+
+@media (max-width: 767px) {
+  .catalog-head__top {
+    padding-top: 34px;
+  }
+
+  .catalog-head__button-close {
+    width: 15px;
+    height: 15px;
+
+    &::before {
+      width: 21px;
+    }
+
+    &::after {
+      width: 21px;
+    }
+  }
+
+  .catalog-head__title {
+    font-size: 28px;
+  }
+
+  .catalog-head__button-open {
+    min-width: auto;
+    padding: 8px 27px 11px;
+
+    font-size: 14px;
+  }
+}
