@@ -1,3 +1,41 @@
 .map {
   height: 422px;
 }
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/map@2x.jpg");
+  }
+}
+
+@media (max-width: 1199px) {
+  .map {
+    height: 374px;
+    background-image: url("../img/map-lap@1x.jpg");
+  }
+}
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5),
+  (max-width: 1199px) and (min-resolution: 144dpi),
+  (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/map-lap@2x.jpg");
+  }
+}
+
+@media (max-width: 767px) {
+  .map {
+    height: 281px;
+    background-image: url("../img/map-mob@1x.jpg");
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
+  (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/map-mob@2x.jpg");
+  }
+}
