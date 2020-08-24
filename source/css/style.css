@@ -1194,6 +1194,11 @@ picture {
   min-height: 433px;
   background: url("../img/history@1x.jpg") no-repeat 0 0 / cover #f1efeb;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .history {
+    background-image: url("../img/history@2x.jpg");
+  }
+}
 .history__container {
   display: flex;
   flex-direction: column;
@@ -1214,21 +1219,6 @@ picture {
 .history__link {
   margin-top: 40px;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history@2x.jpg");
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history-lap@2x.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history-mob@2x.jpg");
-  }
-}
 @media (max-width: 1199px) {
   .history {
     min-height: 393px;
@@ -1237,6 +1227,11 @@ picture {
   }
   .history__container {
     padding: 93px 55px;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .history {
+    background-image: url("../img/history-lap@2x.jpg");
   }
 }
 @media (max-width: 767px) {
@@ -1252,6 +1247,11 @@ picture {
   }
   .history__link {
     margin-top: 25px;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .history {
+    background-image: url("../img/history-mob@2x.jpg");
   }
 }
 .follow__container {
@@ -1426,10 +1426,6 @@ picture {
 .contacts__map-wrapper {
   width: 100%;
 }
-.map {
-  height: 422px;
-  background: url("../img/map@1x.jpg") no-repeat 0 0 / cover #ffffff;
-}
 @media (max-width: 1199px) {
   .contacts {
     position: relative;
@@ -1501,6 +1497,7 @@ picture {
 }
 .map {
   height: 422px;
+  background: url("../img/map@1x.jpg") no-repeat 0 0 / cover #ffffff;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .map {
