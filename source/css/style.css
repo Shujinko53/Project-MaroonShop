@@ -611,6 +611,9 @@ picture {
   .main {
     margin-top: 75px;
   }
+  .main_no-top-spaced {
+    margin-top: 0;
+  }
   .main__block {
     margin-bottom: 80px;
   }
@@ -661,16 +664,6 @@ picture {
 .about__button {
   margin: 33px auto 0;
 }
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .about {
-    background-image: url("../img/main-lap@2x.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .about {
-    background-image: url("../img/main-mob@2x.jpg");
-  }
-}
 @media (max-width: 1199px) {
   .about {
     padding-bottom: 66px;
@@ -698,6 +691,11 @@ picture {
     margin: -10px 0 10px;
     font-size: 54px;
     line-height: 63px;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .about {
+    background-image: url("../img/main-lap@2x.jpg");
   }
 }
 @media (max-width: 767px) {
@@ -733,6 +731,11 @@ picture {
   }
   .about__button {
     margin-top: 25px;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about {
+    background-image: url("../img/main-mob@2x.jpg");
   }
 }
 .promo-card {
