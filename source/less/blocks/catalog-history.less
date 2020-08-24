@@ -36,3 +36,52 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 1199px) {
+  .catalog-history {
+    padding: 95px 45px 103px;
+  }
+
+  .catalog-history h2 {
+    margin-bottom: 51px;
+  }
+
+  .catalog-history__item {
+    width: calc(50% - 15px);
+  }
+
+  .catalog-history__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog-history {
+    padding: 38px 15px 38px;
+  }
+
+  .catalog-history h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .catalog-history__list {
+    display: block;
+  }
+
+  .catalog-history__item:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .catalog-history__item:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .catalog-history__item {
+    width: 100%;
+  }
+
+  .catalog-history__item:last-child {
+    margin-bottom: 0;
+  }
+}

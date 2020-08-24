@@ -1,6 +1,10 @@
 .about {
   background: url("../img/main@1x.jpg") no-repeat 0 0/cover #ffffff;
   padding: 131px 0 64px;
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/main@2x.jpg");
+  }
 }
 
 .about__container {
@@ -49,4 +53,104 @@
 
 .about__button {
   margin: 33px auto 0;
+}
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5),
+  (max-width: 1199px) and (min-resolution: @retina-dpi),
+  (max-width: 1199px) and (min-resolution: @retina-dppx) {
+  .about {
+    background-image: url("../img/main-lap@2x.jpg");
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
+  (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about {
+    background-image: url("../img/main-mob@2x.jpg");
+  }
+}
+
+@media (max-width: 1199px) {
+  .about {
+    padding-bottom: 66px;
+    background-image: url("../img/main-lap@1x.jpg");
+  }
+
+  .about__container {
+    justify-content: space-between;
+    padding: 0 45px;
+  }
+
+  .about__item {
+    width: 36%;
+    min-width: 0;
+  }
+
+  .about__content {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    z-index: 2;
+
+    width: 275px;
+    min-width: 275px;
+    margin: 0;
+
+    transform: translateX(-50%);
+  }
+
+  .about__title {
+    margin: -10px 0 10px;
+
+    font-size: 54px;
+    line-height: 63px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: 97px 0 55px;
+
+    background-image: url("../img/main-mob@1x.jpg");
+  }
+
+  .about__container {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+
+  .about__item {
+    width: calc((100% - 30px)/ 2);
+    min-width: 130px;
+  }
+
+  .about__item:nth-child(2) {
+    order: 0;
+  }
+
+  .about__content {
+    position: static;
+
+    width: 100%;
+    margin: 0 0 35px;
+
+    transform: none;
+  }
+
+  .about__title {
+    margin: 0 0 5px;
+
+    font-size: 42px;
+    line-height: 49px;
+  }
+
+  .about__description {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .about__button {
+    margin-top: 25px;
+  }
 }
