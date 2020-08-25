@@ -1003,6 +1003,11 @@ picture {
   min-height: 400px;
   background: url("../img/spring@1x.jpg") no-repeat 0 0 / cover #f1efeb;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/spring@2x.jpg");
+  }
+}
 .promo__content {
   display: flex;
   flex-direction: column;
@@ -1026,21 +1031,6 @@ picture {
 .promo__link {
   margin: 29px 0 0;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring@2x.jpg");
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring-lap@2x.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring-mob@2x.jpg");
-  }
-}
 @media (max-width: 1199px) {
   .promo {
     min-height: 432px;
@@ -1056,6 +1046,11 @@ picture {
   }
   .promo__link {
     margin-top: 33px;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/spring-lap@2x.jpg");
   }
 }
 @media (max-width: 767px) {
@@ -1088,6 +1083,11 @@ picture {
   }
   .promo__link {
     margin-top: 23px;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/spring-mob@2x.jpg");
   }
 }
 .care__container {

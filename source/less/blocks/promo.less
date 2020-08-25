@@ -5,6 +5,10 @@
   min-height: 400px;
 
   background: url("../img/spring@1x.jpg") no-repeat 0 0/cover #f1efeb;
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/spring@2x.jpg");
+  }
 }
 
 .promo__content {
@@ -36,35 +40,16 @@
   margin: 29px 0 0;
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5),
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring@2x.jpg");
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5),
-  (max-width: 1199px) and (min-resolution: 144dpi),
-  (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring-lap@2x.jpg");
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
-(max-width: 767px) and (min-resolution: 144dpi),
-(max-width: 767px) and (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring-mob@2x.jpg");
-  }
-}
-
 @media (max-width: 1199px) {
   .promo {
     min-height: 432px;
 
     background-image: url("../img/spring-lap@1x.jpg");
     background-position: left center;
+
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/spring-lap@2x.jpg");
+    }
   }
 
   .promo__content {
@@ -88,6 +73,10 @@
 
     background-image: url("../img/spring-mob@1x.jpg");
     background-position: center;
+
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/spring-mob@2x.jpg");
+    }
   }
 
   .promo__content {
