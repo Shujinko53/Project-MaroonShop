@@ -130,7 +130,15 @@
       <section class="card">
         <div class="card__wrapper">
           <div class="card__image-wrapper">
-            <img class="card__image" src="img/card@1x.jpg" width="630" height="647" alt="Rose - крем для лица">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/card@1x.webp 1x, img/card@2x.webp 2x">
+              <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/card@1x.jpg 1x, img/card@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/card-lap@1x.webp 1x, img/card-lap@2x.webp 2x">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/card-lap@1x.jpg 1x, img/card-lap@2x.jpg 2x">
+              <source type="image/webp" srcset="img/card-mob@1x.webp 1x, img/card-mob@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/card-mob@1x.jpg 1x, img/card-mob@2x.jpg 2x">
+              <img class="card__image" src="img/card@1x.jpg" width="630" height="647" alt="Rose - крем для лица">
+            </picture>
           </div>
           <div class="card__content">
             <h1 class="card__content-title">Rose <small>крем для лица</small></h1>
@@ -190,13 +198,21 @@
         </div>
       </section>
 
-      <section class="catalog__history">
-        <div class="catalog-history wrapper">
-          <h2 class="catalog-history__title">Вы недавно смотрели</h2>
+      <section class="catalog-history">
+        <div class="catalog-history__wrapper">
+          <h2 class="catalog-history__title">Вам также может понравиться</h2>
           <ul class="catalog-history__list">
             <li class="catalog-history__item product">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/clean@1x.jpg" width="270" height="350" alt="Clean - маска для лица">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/clean@1x.webp 1x, img/catalog/clean@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog/clean@1x.jpg 1x, img/catalog/clean@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/clean-lap@1x.webp 1x, img/catalog/clean-lap@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/catalog/clean-lap@1x.jpg 1x, img/catalog/clean-lap@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/catalog/clean-mob@1x.webp 1x, img/catalog/clean-mob@2x.webp 2x">
+                  <source type="image/jpeg" srcset="img/catalog/clean-mob@1x.jpg 1x, img/catalog/clean-mob@2x.jpg 2x">
+                  <img class="product__image" src="img/catalog/clean@1x.jpg" width="270" height="350" alt="Clean - маска для лица">
+                </picture>
                 <div class="product__wrapper">
                   <div class="product__text">
                     <h3 class="product__title">Clean</h3><span class="product__price">490 ₽</span>
@@ -210,7 +226,15 @@
             </li>
             <li class="catalog-history__item product">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/lotos@1x.jpg" width="270" height="350" alt="Lotos - маска для лица">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/lotos@1x.webp 1x, img/catalog/lotos@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog/lotos@1x.jpg 1x, img/catalog/lotos@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/lotos-lap@1x.webp 1x, img/catalog/lotos-lap@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/catalog/lotos-lap@1x.jpg 1x, img/catalog/lotos-lap@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/catalog/lotos-mob@1x.webp 1x, img/catalog/lotos-mob@2x.webp 2x">
+                  <source type="image/jpeg" srcset="img/catalog/lotos-mob@1x.jpg 1x, img/catalog/lotos-mob@2x.jpg 2x">
+                  <img class="product__image" src="img/catalog/lotos@1x.jpg" width="270" height="350" alt="Lotos - маска для лица">
+                </picture>
                 <div class="product__wrapper">
                   <div class="product__text">
                     <h3 class="product__title">Lotos</h3><span class="product__price">890 ₽</span>
@@ -224,7 +248,15 @@
             </li>
             <li class="catalog-history__item product">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/lavender@1x.jpg" width="270" height="350" alt="Lavender - мыло ручной работы">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/lavender@1x.webp 1x, img/catalog/lavender@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog/lavender@1x.jpg 1x, img/catalog/lavender@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/lavender-lap@1x.webp 1x, img/catalog/lavender-lap@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/catalog/lavender-lap@1x.jpg 1x, img/catalog/lavender-lap@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/catalog/lavender-mob@1x.webp 1x, img/catalog/lavender-mob@2x.webp 2x">
+                  <source type="image/jpeg" srcset="img/catalog/lavender-mob@1x.jpg 1x, img/catalog/lavender-mob@2x.jpg 2x">
+                  <img class="product__image" src="img/catalog/lavender@1x.jpg" width="270" height="350" alt="Lavender - мыло ручной работы">
+                </picture>
                 <div class="product__wrapper">
                   <div class="product__text">
                     <h3 class="product__title">Lavender</h3><span class="product__price">290 ₽</span>
@@ -238,7 +270,15 @@
             </li>
             <li class="catalog-history__item product">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/coconut@1x.jpg" width="270" height="350" alt="Coconut - масло для тела">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/coconut@1x.webp 1x, img/catalog/coconut@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog/coconut@1x.jpg 1x, img/catalog/coconut@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/coconut-lap@1x.webp 1x, img/catalog/coconut-lap@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/catalog/coconut-lap@1x.jpg 1x, img/catalog/coconut-lap@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/catalog/coconut-mob@1x.webp 1x, img/catalog/coconut-mob@2x.webp 2x">
+                  <source type="image/jpeg" srcset="img/catalog/coconut-mob@1x.jpg 1x, img/catalog/coconut-mob@2x.jpg 2x">
+                  <img class="product__image" src="img/catalog/coconut@1x.jpg" width="270" height="350" alt="Coconut - масло для тела">
+                </picture>
                 <div class="product__wrapper">
                   <div class="product__text">
                     <h3 class="product__title">Coconut</h3><span class="product__price">990 ₽</span>

@@ -134,7 +134,16 @@
             <a class="about__button button" href="#">Подробнее</a>
           </div>
           <a class="about__item promo-card" href="#">
-            <img class="promo-card__image" src="img/main1@1x.jpg" width="330" height="422" alt="Уход для лица">
+            <picture>
+              <source>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main1@1x.webp 1x, img/main1@2x.webp 2x">
+              <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/main1@1x.jpg 1x, img/main1@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main1-lap@1x.webp 1x, img/main1-lap@2x.webp 2x">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/main1-lap@1x.jpg 1x, img/main1-lap@2x.jpg 2x">
+              <source type="image/webp" srcset="img/main1-mob@1x.webp 1x, img/main1-mob@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/main1-mob@1x.jpg 1x, img/main1-mob@2x.jpg 2x">
+              <img class="promo-card__image" src="img/main1@1x.jpg" width="330" height="422" alt="Уход для лица">
+            </picture>
             <div class="promo-card__text">
               <span>Уход для лица</span>
               <svg class="promo-card__icon" height="12" width="26">
@@ -163,27 +172,43 @@
         <div class="best-sellers__slider slider swiper-container">
           <div class="swiper-wrapper slider__wrapper">
             <div class="swiper-slide slider__item product-card">
-              <img class="product-card__image" src="img/cream-high@1x.jpg" alt="High - крем для лица" height="312" width="230">
+              <picture>
+                <source type="image/webp" srcset="img/cream-high@1x.webp 1x, img/cream-high@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/cream-high@1x.jpg 1x, img/cream-high@2x.jpg 2x">
+                <img class="product-card__image" src="img/cream-high@1x.jpg" width="230" height="312" alt="High - крем для лица">
+              </picture>
               <h3 class="product-card__title">High</h3>
               <p class="product-card__description">крем для лица</p>
               <a class="product-card__link" href="#" aria-label="Подробнее">Подробнее</a>
             </div>
             <div class="swiper-slide slider__item product-card">
-              <img class="product-card__image" src="img/cream-rest@1x.jpg" alt="Rest - минеральная пудра" height="312" width="230">
+              <picture>
+                <source type="image/webp" srcset="img/cream-rest@1x.webp 1x, img/cream-rest@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/cream-rest@1x.jpg 1x, img/cream-rest@2x.jpg 2x">
+                <img class="product-card__image" src="img/cream-rest@1x.jpg" width="230" height="312" alt="Rest - минеральная пудра">
+              </picture>
               <h3 class="product-card__title">Rest</h3>
               <p class="product-card__description">минеральная пудра</p>
               <a class="product-card__link" href="#"
                 aria-label="Подробнее">Подробнее</a>
             </div>
             <div class="swiper-slide slider__item product-card">
-              <img class="product-card__image" src="img/cream-rose@1x.jpg" alt="Rose - крем для лица" height="312" width="230">
+              <picture>
+                <source type="image/webp" srcset="img/cream-rose@1x.webp 1x, img/cream-rose@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/cream-rose@1x.jpg 1x, img/cream-rose@2x.jpg 2x">
+                <img class="product-card__image" src="img/cream-rose@1x.jpg" width="230" height="312" alt="Rose - крем для лица">
+              </picture>
               <h3 class="product-card__title">Rose</h3>
               <p class="product-card__description">крем для лица</p>
               <a class="product-card__link" href="card.html"
                 aria-label="Подробнее">Подробнее</a>
             </div>
             <div class="swiper-slide slider__item product-card">
-              <img class="product-card__image" src="img/cream-milk@1x.jpg" alt="Milk - масло для тела" height="312" width="230">
+              <picture>
+                <source type="image/webp" srcset="img/cream-milk@1x.webp 1x, img/cream-milk@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/cream-milk@1x.jpg 1x, img/cream-milk@2x.jpg 2x">
+                <img class="product-card__image" src="img/cream-milk@1x.jpg" width="230" height="312" alt="Milk - масло для тела">
+              </picture>
               <h3 class="product-card__title">Milk</h3>
               <p class="product-card__description">масло для тела</p>
               <a class="product-card__link" href="#"
@@ -210,9 +235,8 @@
         <div class="promo__content">
           <h2 class="promo__title">Встречайте весну
             вместе с нами</h2>
-          <p class="promo__description">Попробуйте новую коллекцию
-            ухаживающих средств для лица
-            с SPF защитой</p>
+          <p class="promo__description">Попробуйте новую коллекцию ухаживающих
+            средств для лица с SPF защитой</p>
           <a class="promo__link button" href="#" aria-label="Подробнее">Подробнее</a>
         </div>
       </section>
@@ -225,9 +249,14 @@
             <p class="care__descritpion">Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы. </p>
             <a class="care__link button" href="#" aria-label="Заполнить анкету">Заполнить анкету</a>
           </div>
-          <img class="care__image care__image_desktop" src="img/care@1x.jpg" width="670" height="451" alt="Индивидуальный уход">
-          <img class="care__image care__image_tablet" src="img/care-lap@1x.jpg" width="398" height="403" alt="Индивидуальный уход">
-          <img class="care__image care__image_mobile" src="img/care-mob@1x.jpg" width="250" height="252" alt="Индивидуальный уход">
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/care-lap@1x.webp 1x, img/care-lap@2x.webp 2x">
+            <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/care-lap@1x.jpg 1x, img/care-lap@2x.jpg 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/care-mob@1x.webp 1x, img/care-mob@2x.webp 2x">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="img/care-mob@1x.jpg 1x, img/care-mob@2x.jpg 2x">
+            <source type="image/webp" srcset="img/care@1x.webp 1x, img/care@2x.webp 2x">
+            <img class="care__image care__image_desktop" srcset="img/care@1x.jpg 1x, img/care@2x.jpg 2x" width="670" height="451" alt="Индивидуальный уход">
+          </picture>
         </div>
       </section>
 
@@ -244,12 +273,36 @@
       <section class="main__block follow">
         <div class="follow__container">
           <div class="follow__images-wrapper">
-            <img class="follow__image" src="img/join1@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
-            <img class="follow__image" src="img/join2@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
-            <img class="follow__image" src="img/join3@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
-            <img class="follow__image" src="img/join4@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
-            <img class="follow__image" src="img/join5@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
-            <img class="follow__image" src="img/join6@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
+            <picture>
+              <source type="image/webp" srcset="img/join1@1x.webp 1x, img/join1@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/join1@1x.jpg 1x, img/join1@2x.jpg 2x">
+              <img class="follow__image" src="img/join1@1x.jpg" alt="Присоединяйтесь к нам" width="233" height="233">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/join2@1x.webp 1x, img/join2@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/join2@1x.jpg 1x, img/join2@2x.jpg 2x">
+              <img class="follow__image" src="img/join2@1x.jpg" alt="Присоединяйтесь к нам" width="233" height="233">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/join3@1x.webp 1x, img/join3@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/join3@1x.jpg 1x, img/join3@2x.jpg 2x">
+              <img class="follow__image" src="img/join3@1x.jpg" alt="Присоединяйтесь к нам" width="233" height="233">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/join4@1x.webp 1x, img/join4@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/join4@1x.jpg 1x, img/join4@2x.jpg 2x">
+              <img class="follow__image" src="img/join4@1x.jpg" alt="Присоединяйтесь к нам" width="233" height="700">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/join5@1x.webp 1x, img/join5@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/join5@1x.jpg 1x, img/join5@2x.jpg 2x">
+              <img class="follow__image" src="img/join5@1x.jpg" alt="Присоединяйтесь к нам" width="233" height="233">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/join6@1x.webp 1x, img/join6@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/join6@1x.jpg 1x, img/join6@2x.jpg 2x">
+              <img class="follow__image" src="img/join6@1x.jpg" alt="Присоединяйтесь к нам" width="233" height="233">
+            </picture>
           </div>
           <div class="follow__content">
             <h2 class="follow__title">Присоединяйтесь к нам</h2>

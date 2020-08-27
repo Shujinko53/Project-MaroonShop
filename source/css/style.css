@@ -611,6 +611,9 @@ picture {
   .main {
     margin-top: 75px;
   }
+  .main_no-top-spaced {
+    margin-top: 0;
+  }
   .main__block {
     margin-bottom: 80px;
   }
@@ -661,16 +664,6 @@ picture {
 .about__button {
   margin: 33px auto 0;
 }
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .about {
-    background-image: url("../img/main-lap@2x.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .about {
-    background-image: url("../img/main-mob@2x.jpg");
-  }
-}
 @media (max-width: 1199px) {
   .about {
     padding-bottom: 66px;
@@ -698,6 +691,11 @@ picture {
     margin: -10px 0 10px;
     font-size: 54px;
     line-height: 63px;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .about {
+    background-image: url("../img/main-lap@2x.jpg");
   }
 }
 @media (max-width: 767px) {
@@ -733,6 +731,11 @@ picture {
   }
   .about__button {
     margin-top: 25px;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about {
+    background-image: url("../img/main-mob@2x.jpg");
   }
 }
 .promo-card {
@@ -1000,6 +1003,11 @@ picture {
   min-height: 400px;
   background: url("../img/spring@1x.jpg") no-repeat 0 0 / cover #f1efeb;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/spring@2x.jpg");
+  }
+}
 .promo__content {
   display: flex;
   flex-direction: column;
@@ -1023,21 +1031,6 @@ picture {
 .promo__link {
   margin: 29px 0 0;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring@2x.jpg");
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring-lap@2x.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/spring-mob@2x.jpg");
-  }
-}
 @media (max-width: 1199px) {
   .promo {
     min-height: 432px;
@@ -1053,6 +1046,11 @@ picture {
   }
   .promo__link {
     margin-top: 33px;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/spring-lap@2x.jpg");
   }
 }
 @media (max-width: 767px) {
@@ -1085,6 +1083,11 @@ picture {
   }
   .promo__link {
     margin-top: 23px;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/spring-mob@2x.jpg");
   }
 }
 .care__container {
@@ -1191,6 +1194,11 @@ picture {
   min-height: 433px;
   background: url("../img/history@1x.jpg") no-repeat 0 0 / cover #f1efeb;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .history {
+    background-image: url("../img/history@2x.jpg");
+  }
+}
 .history__container {
   display: flex;
   flex-direction: column;
@@ -1211,21 +1219,6 @@ picture {
 .history__link {
   margin-top: 40px;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history@2x.jpg");
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history-lap@2x.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history-mob@2x.jpg");
-  }
-}
 @media (max-width: 1199px) {
   .history {
     min-height: 393px;
@@ -1234,6 +1227,11 @@ picture {
   }
   .history__container {
     padding: 93px 55px;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .history {
+    background-image: url("../img/history-lap@2x.jpg");
   }
 }
 @media (max-width: 767px) {
@@ -1249,6 +1247,11 @@ picture {
   }
   .history__link {
     margin-top: 25px;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .history {
+    background-image: url("../img/history-mob@2x.jpg");
   }
 }
 .follow__container {
@@ -1423,10 +1426,6 @@ picture {
 .contacts__map-wrapper {
   width: 100%;
 }
-.map {
-  height: 422px;
-  background: url("../img/map@1x.jpg") no-repeat 0 0 / cover #ffffff;
-}
 @media (max-width: 1199px) {
   .contacts {
     position: relative;
@@ -1498,6 +1497,7 @@ picture {
 }
 .map {
   height: 422px;
+  background: url("../img/map@1x.jpg") no-repeat 0 0 / cover #ffffff;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .map {
@@ -1889,12 +1889,12 @@ picture {
 }
 .product__title {
   margin: 0;
-  font: normal 500 16px/145% "Raleway", "Arial", sans-serif;
+  font: normal 500 16px/110% "Raleway", "Arial", sans-serif;
   color: #122947;
 }
 .product__price {
   margin: 0;
-  font: normal 500 13px/145% "Mplus", "Arial", sans-serif;
+  font: normal 500 13px/100% "Mplus", "Arial", sans-serif;
   color: #122947;
 }
 .product__text {

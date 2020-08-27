@@ -3,6 +3,10 @@
   min-height: 433px;
 
   background: url("../img/history@1x.jpg") no-repeat 0 0/cover #f1efeb;
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/history@2x.jpg");
+  }
 }
 
 .history__container {
@@ -29,34 +33,16 @@
   margin-top: 40px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5),
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history@2x.jpg");
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5),
-(max-width: 1199px) and (min-resolution: 144dpi),
-(max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history-lap@2x.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
-(max-width: 767px) and (min-resolution: 144dpi),
-(max-width: 767px) and (min-resolution: 1.5dppx) {
-  .history {
-    background-image: url("../img/history-mob@2x.jpg");
-  }
-}
-
 @media (max-width: 1199px) {
   .history {
     min-height: 393px;
 
     background-position: center bottom;
     background-image: url("../img/history-lap@1x.jpg");
+
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/history-lap@2x.jpg");
+    }
   }
 
   .history__container {
@@ -69,6 +55,10 @@
     min-height: 346px;
 
     background-image: url("../img/history-mob@1x.jpg");
+
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/history-mob@2x.jpg");
+    }
   }
 
   .history__container {
