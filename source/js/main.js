@@ -28,9 +28,9 @@ function closeHeaderMenu() {
 
   document.removeEventListener(`keydown`, onEscPress);
 
-  document.body.classList.remove(`no-scroll`)
+  document.body.classList.remove(`no-scroll`);
   if (!isScrolled()) {
-    header.classList.remove(`header_colored`)
+    header.classList.remove(`header_colored`);
   }
   navigation.classList.remove(`navigation_open`);
   MenuButton.classList.remove(`header__menu-button_active`);
@@ -44,9 +44,9 @@ function onEscPress(evt) {
 
 function isScrolled() {
   const pxAmount = 0
-  const scrollTop = document.documentElement.scrollTop
+  const scrollTop = document.documentElement.scrollTop;
 
-  return scrollTop > pxAmount
+  return scrollTop > pxAmount;
 }
 
 function setMenuHeight() {
@@ -63,11 +63,11 @@ function setMenuHeight() {
 if (navigation) {
   window.addEventListener(`scroll`, function () {
     if (isScrolled()) {
-      header.classList.add(`header_colored`)
+      header.classList.add(`header_colored`);
     } else {
-      header.classList.remove(`header_colored`)
+      header.classList.remove(`header_colored`);
     }
   })
 
-  closeHeaderMenu()
+  closeHeaderMenu();
 }
