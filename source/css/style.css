@@ -2298,7 +2298,7 @@ picture {
   }
 }
 .accordion__toggler {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 0;
