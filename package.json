@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Shujinko53/Project-MaroonShop#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "bl": "^4.0.3",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
